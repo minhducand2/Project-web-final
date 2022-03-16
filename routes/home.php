@@ -1,0 +1,73 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+use \App\Http\Controllers\Home\WishlistController;
+use \App\Http\Controllers\Home\ShopController;
+use \App\Http\Controllers\Home\ProductDetailsController;
+use \App\Http\Controllers\Home\MyAccountController;
+use \App\Http\Controllers\Home\LoginRegisterController;
+use \App\Http\Controllers\Home\ContactController;
+use \App\Http\Controllers\Home\HomeController;
+use \App\Http\Controllers\Home\ComparePageController;
+use \App\Http\Controllers\Home\CheckoutController;
+use \App\Http\Controllers\Home\CartPageController;
+use \App\Http\Controllers\Home\AccessoriesController;
+use \App\Http\Controllers\Home\BlogController;
+use \App\Http\Controllers\Home\MarketPageController;
+use \App\Http\Controllers\Home\AsusController;
+use \App\Http\Controllers\Home\MsiController;
+use \App\Http\Controllers\Home\DellController;
+use \App\Http\Controllers\Home\LenovolController;
+use \App\Http\Controllers\Home\MacbookController;
+use \App\Http\Controllers\Home\SamSumController;
+use \App\Http\Controllers\Home\IphoneController;
+use \App\Http\Controllers\Home\OppoController;
+use \App\Http\Controllers\Home\vivoController;
+use \App\Http\Controllers\Home\NokiaController;
+use \App\Http\Controllers\Home\PhoneAccessoriesController;
+use \App\Http\Controllers\Home\LaptopAccessoriesController;
+use \App\Http\Controllers\Home\AudioEquipmentsController;
+use \App\Http\Controllers\Home\SmartHomeDeviceController;
+use \App\Http\Controllers\Home\ArchiveDeviceController;
+use \App\Http\Controllers\Home\TShirtController;
+use \App\Http\Controllers\Home\TrousersController;
+use \App\Http\Controllers\Home\HandBagController;
+use \App\Http\Controllers\Home\FashionAccessoriesController;
+use \App\Http\Controllers\Home\ViewOrderController;
+
+Route::get('wishlist', [WishlistController::class, 'index'])->name('wishlist');
+Route::get('shop', [ShopController::class, 'index'])->name('shop');
+Route::get('product-details', [ProductDetailsController::class, 'index'])->name('product-details');
+Route::get('my-account', [MyAccountController::class, 'index'])->name('my-account');
+Route::get('login-register', [LoginRegisterController::class, 'index'])->name('login-register');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/', [HomeController::class, 'index'])->name('/');
+Route::get('compare-page', [ComparePageController::class, 'index'])->name('compare-page');
+Route::get('checkout', [CheckoutController::class, 'index'])->name('checkout');
+Route::get('cart-page', [CartPageController::class, 'index'])->name('cart-page');
+Route::get('accessories', [AccessoriesController::class, 'index'])->name('accessories');
+Route::get('market', [MarketPageController::class, 'index'])->name('market');
+Route::get('blog', [BlogController::class, 'index'])->name('blog');
+Route::get('asus', [AsusController::class, 'index'])->name('asus');
+Route::get('msi', [MsiController::class, 'index'])->name('msi');
+Route::get('dell', [DellController::class, 'index'])->name('dell');
+Route::get('lenovol', [LenovolController::class, 'index'])->name('lenovol');
+Route::get('macbook', [MacbookController::class, 'index'])->name('macbook');
+Route::get('samsung', [SamSumController::class, 'index'])->name('samsum');
+Route::get('iphone', [IphoneController::class, 'index'])->name('iphone');
+Route::get('oppo', [OppoController::class, 'index'])->name('oppo');
+Route::get('vivo', [vivoController::class, 'index'])->name('vivo');
+Route::get('nokia', [NokiaController::class, 'index'])->name('nokia');
+Route::get('laptop-accessories', [LaptopAccessoriesController::class, 'index'])->name('laptop-accessories');
+Route::get('phone-accessories', [PhoneAccessoriesController::class, 'index'])->name('phone-accessories');
+Route::get('audio-equipments', [AudioEquipmentsController::class, 'index'])->name('audio-equipments');
+Route::get('smart-home-device', [SmartHomeDeviceController::class, 'index'])->name('smart-home-device');
+Route::get('archive-device', [ArchiveDeviceController::class, 'index'])->name('archive-device');
+Route::get('hand-bag', [HandBagController::class, 'index'])->name('hand-bag');
+Route::get('t-shirt', [TShirtController::class, 'index'])->name('t-shirt');
+Route::get('trousers', [TrousersController::class, 'index'])->name('trousers');
+Route::get('fashion-accessories', [FashionAccessoriesController::class, 'index'])->name('fashion-accessories');
+Route::get('view-order', [ViewOrderController::class, 'index'])->name('view-order');
+
+
